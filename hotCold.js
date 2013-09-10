@@ -11,22 +11,30 @@ var guessNumber = function(userNumber){
         }        
         
         diff = Math.abs(randomNumber - userNumber);
-        
-        if(lastDiff && diff < lastDiff){
-
-            if(diff < 10){
-                alert(" Getting Much Warmer, Try again!"); 
+        if(isNaN(userNumber)){
+            alert("That's not a number wise guy.");
+            }
+        else if(diff < lastDiff){
+            if(diff < 5){
+                alert("Getting so Hot, Try again!");
+            }
+            else if(diff < 10){
+                alert("Getting much Warmer, Try again!"); 
             }else{
                 alert(" Getting Warmer, Try again!");             
             }
 
         }else{
-            if(diff > 30){
+            if(diff == lastDiff){
+                alert("You already tried that");
+            }
+            else if(diff > 30){
                 alert(" Getting Much Colder, Try again!");  
             }else{
                 alert(" Getting Colder, Try again!");             
 
-            }                
+            } 
+            
         }
         
         lastDiff = diff;
