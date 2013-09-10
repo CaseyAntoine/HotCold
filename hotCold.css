@@ -447,5 +447,6 @@ header{
     margin: auto;
 }
 #guessInput{
-    margin:auto;
+    margin-left: 52px;
+    margin-bottom: 10px;
 }
