@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<!-- External CSS file. -->
-
+		<link rel="stylesheet" href="hotCold.css" />
 		<!-- External JS script -->
 
 		<title>Hot or Cold</title>
-		<!-- <link rel="icon" type="image/png" href=" "> -->
+		<link rel="icon" type="image/png" href="Orbzfire.png">
 
 	</head>
 	<body>
@@ -15,9 +15,17 @@
 			<h1> Hot or Cold: A game of Guessing</h1>
 			<h3> See if you can guess what number the system generates (1 -100)</h3>
 		</header>
-		<div>
-			<div>
-				<input type = "number" id="guess" value="number">
+
+		<div id="gameBox">
+			<div id="entryGuess"> 
+				<h5> Your Last guess was:</h5>
+
+				<div id="lastGuess">
+					<p>"000"</p>
+				</div>
+			</div>
+			<div id="guess">
+				<input type ="number" id="guessInput" value="number"><br>
 				<input type="Submit" value="Submit Guess"> 
 				<input type="reset" value="Reset">
 			</div>
