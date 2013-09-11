@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		<header>
-			<h1> Hot or Cold: A game of Guessing</h1>
+			<h1> <span id="hot">Hot</span> or <span id="cold">Cold</span>: A game of Guessing</h1>
 			<h3> See if you can guess what number the system generates (1 -100)</h3>
 		</header>
 
@@ -25,9 +25,9 @@
 				</div>
 			</div>
 			<div id="guess">
-				<input type ="number" id="guessInput" value="number"><br>
-				<input type="Submit" value="Submit Guess"> 
-				<input type="reset" value="Reset">
+				<input type ="number" id="guessInput" maxlength="3" ><br>
+				<button type="button">Submit</button> 
+				<button type="button">Reset</button>
 			</div>
 		</div>
 
