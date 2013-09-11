@@ -416,18 +416,19 @@ header{
 #cold{
     color:#0000FF;
 }
+
 /* Main Game Box */
 #gameBox{
     border: 1px solid #efefef;
     width: 800px;
-    height: 200px;
+    height: 300px;
     margin: auto;
     box-shadow: 0 0 15px #000000;
     border-radius:10px;
 }
 /* Last user Guess Box */
 #entryGuess{
-    margin:0 0 10px 275px;
+    margin:0 0 10px 254px;
     width: 200px;
 
 }
@@ -436,24 +437,25 @@ header{
     font-style:italic;
 }
 /* User Guess Display */
-#lastGuess{
+#lastGuessBox{
     border: 0.5px solid;
     text-align: center;
     width: 62px;
     margin: auto;
     height: 24px;
 }
-#lastGuess p{
+#lastGuess {
     font-weight:bold;
     margin:auto;
 }
 #guess{
-    border: 1px dotted;
     width: 225px;
-    padding: 10px;
     margin-left: 250px;
 }
 
+#guess h5{
+    text-align: center;
+}
 #guessInput{
     margin:0 0 8px 84px;
     width: 40px;

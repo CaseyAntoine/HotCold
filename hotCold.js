@@ -1,5 +1,14 @@
+$document.ready(function(){
+    $("#submit").onclick(function(){
+    guessNumber(userGuess);
+     });
+
+});
+
+
+
 var guessNumber = function(userNumber){
-    var randomNumber = Math.floor(Math.random() * 100),
+    var randomNumber = Math.floor(Math.random() * 101),
     lastDiff = 0,
     diff = 0;
     
