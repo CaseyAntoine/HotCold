@@ -2,18 +2,27 @@ $document.ready(function(){
     $("#submit").onclick(function(){
     $("#lastGuess").val(diff);
     guessNumber(userNumber);
+    /*var numGuess = document.getElementById('guessInput').value;*/
+
+    $('guessInput').keyup(function(){
+        if(event.keycode == 13){
+            $('#submit').click();
+        }
+    });
+
      });
     /* $("#reset").click(function(){
         location.reload();
     }); */
 });
 
+var randomNumber = Math.floor(Math.random() * 101),
+    lastDiff = 0,
+    diff = 0;
 
 
 var guessNumber = function(userNumber){
-    var randomNumber = Math.floor(Math.random() * 101),
-    lastDiff = 0,
-    diff = 0;
+    
     
     do{
         if(userNumber == randomNumber){
