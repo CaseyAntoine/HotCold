@@ -1,8 +1,11 @@
 $document.ready(function(){
     $("#submit").onclick(function(){
-    guessNumber(userGuess);
+    $("#lastGuess").val(diff);
+    guessNumber(userNumber);
      });
-
+    /* $("#reset").click(function(){
+        location.reload();
+    }); */
 });
 
 
@@ -15,32 +18,32 @@ var guessNumber = function(userNumber){
     do{
         if(userNumber == randomNumber){
 
-            alert(" Hey Everybody! They got it!");
+            $('#message').text('Hey Everybody! They got it!');
             break;
         }        
         
         diff = Math.abs(randomNumber - userNumber);
         if(isNaN(userNumber)){
-            alert("That's not a number wise guy.");
+            $('#message').text('That\'s not a number wise guy.');
             }
         else if(diff < lastDiff){
             if(diff < 5){
-                alert("Getting so Hot, Try again!");
+                $('#message').text('Getting so Hot, Try again!');
             }
             else if(diff < 10){
-                alert("Getting much Warmer, Try again!"); 
+                $('#message').text('Getting much Warmer, Try again!'); 
             }else{
-                alert(" Getting Warmer, Try again!");             
+                $('#message').text('Getting Warmer, Try again!');             
             }
 
         }else{
             if(diff == lastDiff){
-                alert("You already tried that");
+                $('#message').text('You already tried that');
             }
             else if(diff > 30){
-                alert(" Getting Much Colder, Try again!");  
+                $('#message').text('Getting Much Colder, Try again!');  
             }else{
-                alert(" Getting Colder, Try again!");             
+                $('#message').text('Getting Colder, Try again!');             
 
             } 
             
