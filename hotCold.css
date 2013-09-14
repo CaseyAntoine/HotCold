@@ -453,7 +453,7 @@ header{
 }
 #lastGuess {
     font-weight:bold;
-    margin:auto;
+    margin: 4px;
 }
 #guess{
     width: 225px;
