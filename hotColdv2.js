@@ -32,6 +32,10 @@ function getNumber(userGuess){
     var randomNumber = Math.floor(Math.random() * 101),
         lastDiff = 0,
         diff = 0;
+        var userNumber = $('#guessInput').val();
+        function printDiff(){
+        	getElementById('#lastGuess').text(diff.value);
+        };
     
     var guessNumber = function(userNumber){
         
@@ -42,6 +46,8 @@ function getNumber(userGuess){
         }        
         
         diff = Math.abs(randomNumber - userNumber);
+        //Turn diff into function to print on each guess??
+
         if(isNaN(userNumber)){
             $('#message').text('That\'s not a number.');
             }
@@ -82,11 +88,11 @@ function getNumber(userGuess){
         
         $("#submit").onclick(function(){
         
-            userNumber = $('#userNumber').val();
+             var userNumber = $('#guessInput').val();
             diff = guessNumber(userNumber);
          });
         // Accept Enter within input
-        $("#guessInput").keyup(function(){
+        $('#guessInput').keyup(function(){
             if(event.keyCode == 13){
             $("#submit"); 
             }
