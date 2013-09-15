@@ -60,7 +60,7 @@ function guessNumber(userNumber){
     if(diff < lastDiff){
 
         if(diff < 10){
-            $('#message').text('Getting so Hot, Try again!');
+            $('#message').text('Getting really Hot, Try again!');
             $('#gameBox').addClass('highHot');
             printDiff();
 
