@@ -55,28 +55,28 @@ function getNumber(userGuess){
             if(diff < 10){
                 $('#message').text('Getting so Hot, Try again!');
                 document.getElementById('#gamebox').addClass('.highHot');
-                $('#lastGuess').text(diff.value);
+                $('#lastGuess').text(diff);
             }
             else if(diff < 15 && diff > 10){
                 $('#message').text('Getting much Warmer, Try again!'); 
-                $('#lastGuess').text(diff.value);
+                $('#lastGuess').text(diff);
             }else{
                 $('#message').text('Getting Warmer, Try again!');
-                $('#lastGuess').text(diff.value);             
+                $('#lastGuess').text(diff);             
             }
     
         }else{
             if(diff == lastDiff){
                 $('#message').text('You already tried that');
-                $('#lastGuess').text(diff.value);
+                $('#lastGuess').text(diff);
             }
             else if(diff > 30){
                 $('#message').text('Getting Much Colder, Try again!');
                 document.getElementById('#gameBox').addClass('.highCold');
-                $('#lastGuess').text(diff.value);
+                $('#lastGuess').text(diff);
             }else{
                 $('#message').text('Getting Colder, Try again!');
-                $('#lastGuess').text(diff.value);             
+                $('#lastGuess').text(diff);             
     
             } 
         }

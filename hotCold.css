@@ -426,10 +426,10 @@ header{
     box-shadow: 0 0 15px #000000;
     border-radius:10px;
 }
-#gameBox .highcold{
+#gameBox.highCold{
     box-shadow: 0 0 15px #0000FF;
 }
-#gameBox .highHot{
+#gameBox.highHot{
     box-shadow: 0 0 15px #FF0000;
 }
 /* Last user Guess Box */
